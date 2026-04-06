@@ -1,0 +1,28 @@
+name: Unzip build
+
+on:
+  push:
+    paths:
+      - 'build.zip'
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Unzip
+        run: |
+          unzip build.zip -d temp
+          cp -r temp/* .
+          rm -rf temp build.zip
+
+      - name: Commit files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "unzip build"
+          git push
