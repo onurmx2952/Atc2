@@ -5,13 +5,15 @@ on:
     paths:
       - 'build.zip'
 
+permissions:
+  contents: write   # 🔥 BU ÇOK ÖNEMLİ
+
 jobs:
   unzip:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Unzip
         run: |
@@ -19,7 +21,7 @@ jobs:
           cp -r temp/* .
           rm -rf temp build.zip
 
-      - name: Commit files
+      - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
