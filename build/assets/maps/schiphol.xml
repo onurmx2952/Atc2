@@ -1,33 +1,27 @@
-<g xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="1280" height="720" fill="#18363f"/>
-  <g stroke="#5a7a80" stroke-width="1" fill="none" opacity="0.30">
-    <circle cx="640" cy="360" r="100"/>
-    <circle cx="640" cy="360" r="200"/>
-    <circle cx="640" cy="360" r="300"/>
-  </g>
+<g xmlns="http://www.w3.org/2000/svg" transform="translate(0 0)">
+  <path d="
+    M0 0 L1280 0 L1280 720 L0 720 Z
 
-  <g stroke="#7b8d91" stroke-width="2" fill="none" opacity="0.85">
-    <!-- parallel runways -->
-    <line x1="610" y1="332" x2="770" y2="468"/>
-    <line x1="596" y1="346" x2="756" y2="482"/>
+    M640 360
+    m -100, 0
+    a 100,100 0 1,0 200,0
+    a 100,100 0 1,0 -200,0
 
-    <!-- simple STAR/SID skeleton -->
-    <polyline points="110,560 320,525 610,300 705,410" />
-    <polyline points="250,170 610,300 705,410" />
-    <polyline points="210,650 320,525 610,300" />
-    <polyline points="690,395 930,520 1120,620" />
-    <polyline points="705,410 980,250" />
-  </g>
+    M640 360
+    m -200, 0
+    a 200,200 0 1,0 400,0
+    a 200,200 0 1,0 -400,0
 
-  <g fill="#dfe9ea" font-family="Roboto Mono, monospace" font-size="16" font-weight="700">
-    <text x="88" y="552">ASTAL</text>
-    <text x="192" y="668">CUBUK</text>
-    <text x="304" y="518">BINKA</text>
-    <text x="228" y="162">GURBU</text>
-    <text x="620" y="294">INBET</text>
-    <text x="975" y="242">TULGU</text>
-    <text x="924" y="540">ERKOS</text>
-    <text x="1112" y="640">BAG</text>
-    <text x="640" y="350">LTAC</text>
-  </g>
+    M640 360
+    m -300, 0
+    a 300,300 0 1,0 600,0
+    a 300,300 0 1,0 -600,0
+
+    M610 332 L770 468
+    M596 346 L756 482
+
+    M110 560 L320 525 L610 360
+    M250 170 L610 300 L705 410
+    M210 650 L320 525 L610 360
+  " fill="#5b7f8a" stroke="#d9ecef" stroke-width="1"/>
 </g>
