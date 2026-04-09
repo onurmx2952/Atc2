@@ -1,27 +1,25 @@
-<g xmlns="http://www.w3.org/2000/svg" transform="translate(0 0)">
-  <path d="
-    M0 0 L1280 0 L1280 720 L0 720 Z
+<g xmlns="http://www.w3.org/2000/svg" id="ltac-star-fixes-style" transform="translate(0 0)"
+   fill="none" stroke="#ffffff" stroke-width="1.2"
+   font-family="monospace" font-size="14">
 
-    M640 360
-    m -100, 0
-    a 100,100 0 1,0 200,0
-    a 100,100 0 1,0 -200,0
+  <g id="fix-PETAR">
+    <circle cx="380" cy="540" r="2.5" fill="#ffffff" stroke="none"/>
+    <text x="388" y="536" fill="#ffffff" stroke="none">PETAR</text>
+  </g>
 
-    M640 360
-    m -200, 0
-    a 200,200 0 1,0 400,0
-    a 200,200 0 1,0 -400,0
+  <g id="fix-ILHAN">
+    <circle cx="660" cy="235" r="2.5" fill="#ffffff" stroke="none"/>
+    <text x="668" y="231" fill="#ffffff" stroke="none">ILHAN</text>
+  </g>
 
-    M640 360
-    m -300, 0
-    a 300,300 0 1,0 600,0
-    a 300,300 0 1,0 -600,0
+  <g id="fix-HALIL">
+    <circle cx="300" cy="245" r="2.5" fill="#ffffff" stroke="none"/>
+    <text x="308" y="241" fill="#ffffff" stroke="none">HALIL</text>
+  </g>
 
-    M610 332 L770 468
-    M596 346 L756 482
-
-    M110 560 L320 525 L610 360
-    M250 170 L610 300 L705 410
-    M210 650 L320 525 L610 360
-  " fill="#5b7f8a" stroke="#d9ecef" stroke-width="1"/>
+  <g id="route-sample">
+    <polyline points="380,540 430,490 465,435 490,395"/>
+    <polyline points="660,235 690,275 710,305 720,325"/>
+    <polyline points="300,245 365,300 430,350 490,395"/>
+  </g>
 </g>
